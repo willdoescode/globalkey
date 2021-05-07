@@ -10,8 +10,16 @@ nj-cli build --release
 
 ## Calling from node
 
+```shell
+npm i globalkey
+
+# or
+
+yarn add globalkey
+```
+
 ```node
-const globalkey = require("./dist");
+const globalkey = require("globalkey");
 
 function keyCallBack(keys) {
   console.log(keys);
