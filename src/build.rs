@@ -1,3 +1,3 @@
 fn main() {
-	node_bindgen::build::configure();
+    node_bindgen::build::configure();
 }
