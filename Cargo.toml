@@ -13,7 +13,6 @@ crate-type = ["cdylib"]
 [dependencies]
 device_query = "0.2.8"
 node-bindgen = "4.3.0"
-rayon = "1.5.0"
 stoppable_thread = "0.2.1"
 
 [build-dependencies]
