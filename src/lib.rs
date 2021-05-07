@@ -12,7 +12,6 @@ fn start<F: Fn(Vec<String>) + Send + 'static>(callback: F) {
 			let keys = state.get_keys();
 	    if !keys.is_empty() && keys != previous_keys {
 		    callback(keys.clone().into_par_iter().map(|key| format!("{}", key)).collect());
-		    println!("{:?}", &keys)
 	    }
 	    previous_keys = keys;
     }
