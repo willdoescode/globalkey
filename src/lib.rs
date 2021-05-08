@@ -11,7 +11,7 @@ fn start<F: Fn(Vec<String>) + Send + 'static>(callback: F) {
             std::thread::sleep(std::time::Duration::new(0, 1000));
             let keys = state.get_keys();
             if !keys.is_empty() && keys != previous_keys {
-                callback(keys.clone().iter().map(|key| format!("{}", key)).collect());
+                callback(keys.clone().iter().map(|key| key.to_string()).collect());
             }
             previous_keys = keys;
         }

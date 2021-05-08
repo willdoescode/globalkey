@@ -1,6 +1,6 @@
 {
   "name": "globalkey",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.node",
   "repository": "https://github.com/willdoescode/globalkey.git",
   "author": "Will Lane <williamlane923@gmail.com>",
