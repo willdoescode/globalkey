@@ -23,9 +23,13 @@ yarn add globalkey
 ```node
 const globalkey = require("globalkey");
 
-function keyCallBack(keys) {
+function keyDownCallBack(keys) {
   console.log(keys);
 }
 
-globalkey.start(keyCallBack);
+function keyUpCallBack(keys) {
+  console.log(keys);
+}
+
+globalkey.start(keyDownCallBack, keyUpCallBack);
 ```
