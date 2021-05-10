@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/v/globalkey) ![downloads](https://img.shields.io/npm/dm/globalkey)
+
 # GlobalKey
 
 ## Building
