@@ -21,15 +21,11 @@ yarn add globalkey
 ```
 
 ```node
-const globalkey = require("globalkey");
+const globalkey = require('globalkey');
 
-function keyDownCallBack(keys) {
-  console.log(keys);
-}
+globalkey
+    .start(x => console.log(`Keydown ${x}`), y => console.log(`Keyup ${y}`));
 
-function keyUpCallBack(keys) {
-  console.log(keys);
-}
 
-globalkey.start(keyDownCallBack, keyUpCallBack);
+setTimeout(() => globalkey.stop(), 5000)
 ```
